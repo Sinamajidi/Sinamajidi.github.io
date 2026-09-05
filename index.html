@@ -1,1 +1,148 @@
-My first message.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sina Majidi</title>
+<meta name="description" content="Sina Majidi">
+<meta name="theme-color" content="#FAF4EC">
+<meta property="og:title" content="Sina Majidi">
+<meta property="og:description" content="I'm a student working across embedded systems, PCB design, robotics, and AI in robotics.">
+<meta property="og:image" content="https://github.com/Sinamajidi.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="Assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__row">
+    <a href="#top" class="nav__mark" aria-label="Sina Majidi, home"><img src="Assets/Logo_SM.png" alt="SM"></a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#funding">Funding</a></li>
+      </ul>
+    </nav>
+    <a class="nav__cta" href="https://github.com/Sinamajidi" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap" aria-label="Introduction">
+    <div class="hero__text">
+      <p class="hero__kicker">Electrical engineering · Robotics</p>
+      <h1 class="hero__title">Building the connection between hardware and intelligent systems.</h1>
+      <p class="hero__lede">Embedded firmware, PCB layout, and the control systems that make machines behave the way they're supposed to - with a growing focus on bringing AI onto robots themselves.</p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--solid">See recent work</a>
+        <a href="https://github.com/Sinamajidi" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Visit GitHub profile</a>
+      </div>
+      <dl class="hero__stats" id="live-stats">
+        <div><dt>Public repos</dt><dd data-stat="repos">--</dd></div>
+        <div><dt>Stars earned</dt><dd data-stat="stars">--</dd></div>
+        <div><dt>Followers</dt><dd data-stat="followers">--</dd></div>
+      </dl>
+    </div>
+
+  </section>
+
+  <section class="section" id="work" aria-label="Projects">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Recent repositories</h2>
+        <p>Pulled live from GitHub — newest activity first.</p>
+      </div>
+      <ul class="repo-grid" id="repo-grid" aria-live="polite">
+        <li class="repo-card repo-card--skeleton" aria-hidden="true"></li>
+        <li class="repo-card repo-card--skeleton" aria-hidden="true"></li>
+        <li class="repo-card repo-card--skeleton" aria-hidden="true"></li>
+        <li class="repo-card repo-card--skeleton" aria-hidden="true"></li>
+      </ul>
+      <p class="repo-note" id="repo-note" hidden>GitHub's public API is rate-limited per visitor — showing a recent snapshot instead. <a href="https://github.com/Sinamajidi?tab=repositories" target="_blank" rel="noopener noreferrer">See the full list on GitHub.</a></p>
+      <a class="text-link" href="https://github.com/Sinamajidi?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories on GitHub</a>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="stack" aria-label="Technical skills">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Working with</h2>
+        <p>Languages, frameworks, and tools from my GitHub profile.</p>
+      </div>
+
+      <div class="stack-groups">
+        <div class="stack-group">
+          <h3>Languages</h3>
+          <ul class="tag-list" id="github-languages" aria-live="polite">
+            <li>Loading...</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Repository signals</h3>
+          <ul class="tag-list" id="github-signals" aria-live="polite">
+            <li>Loading...</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Profile</h3>
+          <ul class="tag-list" id="github-profile" aria-live="polite">
+            <li>Loading...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-label="About">
+    <div class="wrap about">
+      <img class="about__avatar" src="https://github.com/Sinamajidi.png" alt="Sina Majidi" width="120" height="120" loading="lazy">
+      <div>
+        <h2>About</h2>
+        <p>I am an electrical engineering student who works across the stack between hardware and software - embedded systems, PCB Design, and the control systems that make hardware behave the way it should.</p>
+        <p>Current interests: <strong>embedded systems</strong>, <strong>robotics</strong>, <strong>PCB design</strong>, and <strong>AI in robotics</strong> - putting models on the machine itself rather than leaving them in the cloud.</p>
+        <ul class="tag-list tag-list--accent">
+          <li>Embedded Systems</li><li>Robotics</li><li>PCB Design</li><li>AI in Robotics</li><li>Digital Electronics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--funding" id="funding" aria-label="Support">
+    <div class="wrap funding-card">
+      <div>
+        <h2>Support the work</h2>
+        <p>If something here was useful to you, you can send a tip. No pressure at all - this is just here for anyone who wants to.</p>
+      </div>
+      <div class="wallet" id="wallet" hidden>
+        <img class="wallet__badge" id="wallet-badge" alt="" hidden>
+        <span class="wallet__label" id="wallet-label"></span>
+        <code class="wallet__address" id="wallet-address"></code>
+        <button class="btn btn--solid wallet__copy" id="copy-wallet" type="button" data-default="Copy address" data-copied="Copied">Copy address</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <p>Sina Majidi</p>
+    <ul class="footer__links">
+      <li><a href="https://github.com/Sinamajidi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/sina-majidi" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://www.kaggle.com/sinamajidi" target="_blank" rel="noopener noreferrer">Kaggle</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
